@@ -10,10 +10,9 @@ export class SignupComponent implements OnInit {
 
   type: string = 'password';
   isText: boolean = false;
-  display: string = "visibility_off";
   SignupForm!: FormGroup
   constructor(private fb: FormBuilder) { }
-
+  
   ngOnInit(): void {
     this.SignupForm = this.fb.group({
       name: ['',Validators.required],
@@ -26,7 +25,6 @@ export class SignupComponent implements OnInit {
 
   hideshowPass(){
     this.isText = !this.isText;
-    this.isText ? this.display = "visibility": this.display="visibility_off";
     this.type = this.isText?"text":"password";
   }
 
@@ -34,3 +32,5 @@ export class SignupComponent implements OnInit {
     console.log(this.SignupForm.value);
   }
 }
+                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

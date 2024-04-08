@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from "@angular/material/icon";
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     SlAuthLibraryComponent,
@@ -22,7 +24,9 @@ import {MatIconModule} from "@angular/material/icon";
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     SignupComponent
